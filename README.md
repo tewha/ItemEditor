@@ -20,7 +20,7 @@ Here's where this currently falls short:
 1. Changes made to on the edit screen are currently applied immediately, without validation.
 2. Cancel doesn't work.
 
-Any ideas, folks?
+Any ideas, folks? Pull requests, maybe?
 
 The plan is to keep this project up forever, updating it as necessary, to serve as something future users can pull from.
 
