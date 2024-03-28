@@ -1,6 +1,10 @@
 # ItemEditor
-I want to create an app that behaves like most of Apple's simple apps.
+I want to create an app that behaves like most of Apple's simple list apps, supporting add, edit and delete.
 
+## How To Use It
+The project has no dependancies. Open the project, build & run. If you want to test on real hardware, you may need to change the developmeant team and bundle identifier.
+
+## Goals
 1. A list of items, backed by SwiftData.
 2. An Edit button that shows delete buttons.
 3. Swipe to delete also works.
@@ -15,11 +19,13 @@ All implemented in SwiftUI and SwiftData!
 
 Note that I don't currently implement ordering. I know how to do it and will probably add it later.
 
+## Shortcomings
 Here's where this currently falls short:
 
 1. Changes made to on the edit screen are currently applied immediately, without validation.
 2. Cancel doesn't work.
 
+## Feedback & Future
 Any ideas, folks? Pull requests, maybe?
 
 The plan is to keep this project up forever, updating it as necessary, to serve as something future users can pull from.
