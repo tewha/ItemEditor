@@ -10,6 +10,8 @@ I want to create an app that behaves like most of Apple's simple apps.
    1. There's a Cancel button that reverts the item.
    2. There's a Done button that saves the item, assuming it validates.
 
+All implemented in SwiftUI and SwiftData!
+
 Here's where this currently falls short:
 
 1. Changes made to on the edit screen are currently applied immediately, without validation.
