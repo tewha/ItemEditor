@@ -9,6 +9,7 @@ I want to create an app that behaves like most of Apple's simple apps.
 5. When you tap an item later, you can tap an Edit button.
    1. There's a Cancel button that reverts the item.
    2. There's a Done button that saves the item, assuming it validates.
+      Just disabling Done also seems to be an option, but I'd rather know how to do it both ways. I'm willing to add more fields to make that a useful thing.
 
 All implemented in SwiftUI and SwiftData!
 
