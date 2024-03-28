@@ -12,6 +12,21 @@ struct ItemViewAndEditScreen: View {
     @Environment(\.editMode) private var editMode
     @State var item: Item
 
+    func edit() {
+        print("edit")
+        editMode?.wrappedValue = .active
+    }
+
+    func cancel() {
+        print("cancel")
+        editMode?.wrappedValue = .inactive
+    }
+
+    func done() {
+        print("done")
+        editMode?.wrappedValue = .inactive
+    }
+
     var body: some View {
         let isEditing = editMode?.wrappedValue.isEditing == true
 
@@ -21,16 +36,12 @@ struct ItemViewAndEditScreen: View {
             .toolbar {
                 if isEditing {
                     ToolbarItem(placement: .topBarLeading) {
-                        Button("Cancel", role: .cancel) {
-                            // Rollback or abandon changes here.
-                        }
+                        Button("Cancel", role: .cancel, action: cancel)
                     }
                 }
 
                 ToolbarItem(placement: .topBarTrailing) {
-                    EditButton()
-                    // On Edit, disable autosave?
-                    // On Done, validate and save.
+                    Button(isEditing ? "Done" : "Edit", action: isEditing ? done : edit)
                 }
             }
 
