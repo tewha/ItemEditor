@@ -12,12 +12,12 @@ I want to create an app that behaves like most of Apple's simple apps.
 
 All implemented in SwiftUI and SwiftData!
 
+Note that I don't currently implement ordering. I know how to do it and will probably add it later.
+
 Here's where this currently falls short:
 
 1. Changes made to on the edit screen are currently applied immediately, without validation.
 2. Cancel doesn't work.
-
-Note that I don't currently implement ordering. I know how to do it and will probably add it later.
 
 Any ideas, folks?
 
