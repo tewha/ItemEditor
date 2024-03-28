@@ -17,6 +17,8 @@ Here's where this currently falls short:
 1. Changes made to on the edit screen are currently applied immediately, without validation.
 2. Cancel doesn't work.
 
+Note that I don't currently implement ordering. I know how to do it and will probably add it later.
+
 Any ideas, folks?
 
 The plan is to keep this project up forever, updating it as necessary, to serve as something future users can pull from.
