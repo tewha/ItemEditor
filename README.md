@@ -20,3 +20,5 @@ Here's where this currently falls short:
 Any ideas, folks?
 
 The plan is to keep this project up forever, updating it as necessary, to serve as something future users can pull from.
+
+If there's a good, small example of this elsewhere I'll happily replace the repo with a link to that.
