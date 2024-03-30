@@ -4,6 +4,17 @@ I want to create an app that behaves like most of Apple's simple list apps, supp
 ## How To Use It
 The project has no dependancies. Open the project, build & run. If you want to test on real hardware, you may need to change the developmeant team and bundle identifier.
 
+The code is organized all into one folder. The most relevant bits:
+
+* Item is the SwiftData model.
+* ItemDetailsView contains the viewer/editor for an Item.
+* ItemAddScreen is the wrapper around ItemViewAndEditScreen that provides the Add frame (with working Add/Cancel).
+   * This works as is, but may need changes depending on changes to ItemDetailsView and ItemViewAndEditScreen.
+* ItemViewAndEditScreen is the wrapper around ItemViewAndEditScreen that provides the View frame with Edit/Done/Cancel.
+   * Neither button works as expected; see Shortcomings.
+* ContentView is the main app view.
+   * This is responsible for opening ItemAddScreen and ItemViewAndEditScreen, so it may need changes.
+
 ## Goals
 1. A list of items, backed by SwiftData.
 2. An Edit button that shows delete buttons.
